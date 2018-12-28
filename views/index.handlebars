@@ -1,15 +1,34 @@
+<div class=header>
 <h1>Khana Khazana!!</h1>
+</div>
 
-<ul>
+<div class =Foods>
+  <h2>Khanas!</h2>
+<ol>
   {{#each khana}}
   {{#unless devoured}}
     <li id={{ID}}> <p>Khana: {{khana_name}}</p> </li> 
     <button class="devour" data-id={{ID}}> DEVOUR!</button>
     {{/unless}}
+  {{/each}}
+</ol>
 
+<div class = DevouredFood>
+<h2>Devoured Khana!!</h1>
+
+<ul>
+  {{#each khana}}
+  {{#if devoured}}
+    <li id={{ID}}> <p>Khana: {{khana_name}}
+      </li>
+      <button class="savor" data-id={{ID}}> Savor it?</button>
+    {{/if}}
   {{/each}}
 </ul>
+</div>
 
+
+<div class = AddFood>
 <h2>Add a Khana(Indian/Pakistani Food)</h2>
 <form class="create-form">
 
@@ -20,15 +39,5 @@
 
   <button type="submit">Add a Khana</button>
 </form>
-
-
-<h1>Devoured Khana!!</h1>
-
-<ul>
-  {{#each khana}}
-  {{#if devoured}}
-    <li id={{ID}}> <p>Khana: {{khana_name}}
-    {{/if}}
-  {{/each}}
-</ul>
+</div>
 

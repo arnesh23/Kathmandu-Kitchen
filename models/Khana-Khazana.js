@@ -16,6 +16,11 @@ var khana = {
             cb(res);
         } 
     )
+    },
+    deleteOne: function(id,cb){
+        orm.deleteOne("Khana",id, function(res){
+            cb(res);
+        })
     }
 }
 

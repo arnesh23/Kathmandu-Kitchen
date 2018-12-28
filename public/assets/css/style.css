@@ -1,0 +1,24 @@
+.header h1{
+    text-align:center
+}
+
+.Foods {
+    position: relative;
+    left:25% 
+ }
+
+.DevouredFood{
+    position: absolute;
+    top:-20px;
+    right: 500px;
+
+}
+
+.AddFood {
+    position:absolute;
+    top:500px;
+    text-align:center;
+    
+  
+
+}

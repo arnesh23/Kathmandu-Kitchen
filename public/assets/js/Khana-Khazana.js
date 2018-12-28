@@ -24,11 +24,27 @@ $(".create-form").on("submit", function(event) {
 
   $(".devour").on("click", function(event) {
     var id = $(this).data("id");
-    console.log("ID:"+id);
-
+    console.log(id);
+    
     // Send the DELETE request.
     $.ajax("/api/khana/" + id, {
       type: "PUT",
+    }).then(
+      function() {
+        console.log("deleted khana", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+
+  $(".savor").on("click", function(event) {
+    var id = $(this).data("id");
+    console.log("SAVOR CLICKED!");
+    
+    // Send the DELETE request.
+    $.ajax("/api/khana/" + id, {
+      type: "DELETE",
     }).then(
       function() {
         console.log("deleted khana", id);

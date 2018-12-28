@@ -3,10 +3,11 @@ var connection = require("./connection.js");
 var orm = {
     selectAll: function(tableInput,cb){
         console.log("TABLE"+tableInput);
-        var queryString = "SELECT * FROM ??";
+        var queryString = "SELECT * FROM Khana";
+        console.log(queryString);
         connection.query(queryString, [tableInput], function(err,result){
             if (err) throw err;
-            console.log(result);
+
         
             cb(result);
         })
@@ -30,6 +31,20 @@ var orm = {
             cb(result);
         })
 
+    },
+    deleteOne: function(tableInput,id,cb){
+        console.log(tableInput);
+        console.log("ID:"+id);
+        var queryString = "DELETE FROM ?? WHERE ID=?";
+        console.log(queryString);
+        connection.query(queryString, [tableInput,id], function(err,result){
+            if (err) throw err;
+            console.log("RESULT:"+result);
+
+            cb(result);
+        })
+
     }
+    
 }
 module.exports = orm;
