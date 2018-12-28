@@ -1,0 +1,34 @@
+<h1>Khana Khazana!!</h1>
+
+<ul>
+  {{#each khana}}
+  {{#unless devoured}}
+    <li id={{ID}}> <p>Khana: {{khana_name}}</p> </li> 
+    <button class="devour" data-id={{ID}}> DEVOUR!</button>
+    {{/unless}}
+
+  {{/each}}
+</ul>
+
+<h2>Add a Khana(Indian/Pakistani Food)</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Khana:</label>
+    <input type="text" id="khana" name="khana">
+  </div>
+
+  <button type="submit">Add a Khana</button>
+</form>
+
+
+<h1>Devoured Khana!!</h1>
+
+<ul>
+  {{#each khana}}
+  {{#if devoured}}
+    <li id={{ID}}> <p>Khana: {{khana_name}}
+    {{/if}}
+  {{/each}}
+</ul>
+
