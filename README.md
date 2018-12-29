@@ -10,5 +10,5 @@ to the Devoured! side of the WebPage. If the Khana is Savored, it is deleted fro
 
 
 
-[![Watch the video](https://img.youtube.com/vi/UZ6U60oYiQ8/0.jpg)](https://youtu.be/UZ6U60oYiQ8)
+          [![Watch the video](https://img.youtube.com/vi/UZ6U60oYiQ8/0.jpg)](https://youtu.be/UZ6U60oYiQ8)
 
