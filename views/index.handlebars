@@ -1,5 +1,6 @@
 <div class=header>
 <h1>Khana Khazana!!</h1>
+<img src="/assets/img/Khana.jpg" id = "khanaimg">
 </div>
 
 <div class =Foods>
@@ -14,17 +15,17 @@
 </ol>
 
 <div class = DevouredFood>
-<h2>Devoured Khana!!</h1>
+<h2>Devoured Khana!!</h2>
 
-<ul>
+<ol>
   {{#each khana}}
   {{#if devoured}}
-    <li id={{ID}}> <p>Khana: {{khana_name}}
-      </li>
+    <li id={{ID}}> <p>Khana: {{khana_name}}</p>
+    </li>
       <button class="savor" data-id={{ID}}> Savor it?</button>
     {{/if}}
   {{/each}}
-</ul>
+</ol>
 </div>
 
 

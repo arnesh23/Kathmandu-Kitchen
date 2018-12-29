@@ -1,24 +1,28 @@
-.header h1{
+.header {
     text-align:center
+}
+#khanaimg {
+width:500px;
+height:250px
 }
 
 .Foods {
     position: relative;
-    left:25% 
+    left:20% 
  }
 
 .DevouredFood{
     position: absolute;
     top:-20px;
-    right: 500px;
-
+    left: 500px;
 }
 
 .AddFood {
     position:absolute;
-    top:500px;
+    top:300px;
+    left:12.5%;
     text-align:center;
-    
-  
-
 }
+body {
+    background-color: lightblue;
+  }
